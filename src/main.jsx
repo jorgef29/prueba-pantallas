@@ -10,6 +10,8 @@ import { NavBarMine } from './components/NavBarMine.jsx'
 import { ListadoPedidosCompras } from './components/ListadoPedidosCompras.jsx'
 import ListarDepositos from './components/ListarDepositos.jsx'
 import ListarProducto from './components/ListarProductos.jsx'
+import ListarCategorias from './components/ListarCategorias.jsx'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,8 +20,20 @@ ReactDOM.createRoot(document.getElementById('root')).render(
      <ListadoProveedores/> 
      <FormProductos/>
       <ListadoPedidosCompras/>
+
+      //esto debe ir en app.jsx
+      no hace falta el StrictMode
 */}
+  <Router>
     <NavBarMine/>
-      <ListarProducto/>
+          <Routes>
+            <Route path="/proveedores" element={<ListadoProveedores/>} />
+            <Route path="/depositivos" element={<ListarDepositos/>} />
+            <Route path="/categorias" element={<ListarCategorias/>} />
+            <Route path="/productos" element={<ListarProducto/>} />
+          </Routes>
+
+      </Router>
+
      </React.StrictMode>,
 )

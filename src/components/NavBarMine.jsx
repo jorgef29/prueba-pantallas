@@ -14,10 +14,10 @@ export const NavBarMine = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#link">Listado proveedores</Nav.Link>
-          <Nav.Link href="#link">Listado productos</Nav.Link>
-          <Nav.Link href="#link">Listado de pedidos de compra</Nav.Link>
-          <Nav.Link href="#link"></Nav.Link>
+          <Nav.Link href="/proveedores">Listado proveedores</Nav.Link>
+          <Nav.Link href="/depositivos">Listado depositos</Nav.Link>
+          <Nav.Link href="/categorias">Listado categorias</Nav.Link>
+          <Nav.Link href="/productos">Listado productos</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
