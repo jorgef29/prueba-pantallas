@@ -7,6 +7,7 @@ import ListarDepositos from "./components/ListarDepositos.jsx";
 import ListarProducto from "./components/ListarProductos.jsx";
 import ListarCategorias from "./components/ListarCategorias.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+//a
 function App() {
   return (
     <>
